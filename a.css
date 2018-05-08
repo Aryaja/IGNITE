@@ -1,0 +1,17 @@
+html{
+  background:url("IGNITEIMG/111.gif")repeat ;
+  background-size:80%;
+  background-attachment:fixed;
+  }
+  
+center,table,tr,td,a{
+	color:white;
+	border:black;
+	}
+	
+	
+h1.b{
+	color:white;
+	font-size:20px;
+	}
+

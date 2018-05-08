@@ -1,0 +1,24 @@
+html{
+    background:url("IGNITEIMG/255.gif")repeat-x;
+	background-size:100;
+	background-attachment:fixed;
+	background:url("IMG1/7.gif")repeat ;
+    
+	
+  }
+  
+body,h1{
+	color:white;
+	text-decoration:none;
+	}
+	
+table{
+	margin:5%;
+	border-spacing:20%;
+	border-collapse:separate;
+	table-layout: auto;
+	
+	}
+	
+td.a{width:50;}
+

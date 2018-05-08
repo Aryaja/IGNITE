@@ -1,0 +1,87 @@
+html{
+  background:url("4.gif")repeat ;
+  background-attachment:fixed;
+  color:white;
+  
+  }
+  
+td.a{
+	background:url("IGNITEIMG/543.jpg");
+	background-size:cover;
+	color:white;
+	text-decoration:none;
+	}
+
+td.b{
+	background:url("IGNITEIMG/510.jpg");
+	background-size:cover;
+	color:white;
+	}
+	
+td.c{
+	background:url("IGNITEIMG/562.gif");
+	background-size:cover;
+	color:white;
+	}
+	
+td.d{
+	background:url("IGNITEIMG/k.gif");
+	background-size:cover;
+	color:white;
+	}
+	
+td.e{
+	background:url("IGNITEIMG/512.jpg");
+	background-size:cover;
+	color:white;
+	}
+	
+td.f{
+	background:url("IGNITEIMG/514.jpg");
+	background-size:cover;
+	color:white;
+	}
+	
+ui,li{
+	color:white;
+	font-size:125%;
+	font-weight:bold;
+	
+	}
+	
+td.g{
+	background:url("IGNITEIMG/549.jpg ");
+	background-size:cover;
+	color:white;
+	word-spacing:10px;
+	margin: 20px 5%;
+	}
+	
+td.h{
+	background:url("IGNITEIMG/565.jpg");
+	background-size:cover;
+	color:white;
+	}
+	
+td.i{
+	background:url("IGNITEIMG/544.jpg");
+	background-size:cover;
+	color:white;
+	}
+
+p{color:white;}
+
+
+	
+a:link {color:white;}
+a:visited {color: white}
+a:hover {color: white}
+a:active {color: white}
+
+.one{
+	text-decoration:none;
+	}
+
+span{
+	text-decoration:underline;
+	}

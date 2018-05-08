@@ -1,0 +1,44 @@
+html{
+  background:url("IMG1/802.gif")repeat;
+  background-attachment:fixed;
+  background-size:50%;
+  }
+  
+h1.q{
+	font-size:250%;
+	color:white;
+	text-decoration:underline;
+	}
+	
+td.a{
+	background:url("IGNITEIMG/255.gif")no-repeat;
+	background-size:cover;
+	color:white;
+	margin:40%}
+	
+a:link {color:white;}
+a:visited {color: white;}
+a:hover {color: red;}
+a:active {color: white}
+
+
+td.b{
+	background:url("IGNITEIMG/560.gif")no-repeat;
+	background-size:100%;
+	}
+	
+td.c{
+	background:url("IGNITEIMG/221.jpg")no-repeat;
+	background-size:cover;}
+	
+td.d{
+	background:url("IGNITEIMG/562.jpg")no-repeat;
+	background-size:cover;}
+	
+tr.1{
+	size:100%;
+	}
+	
+table.e{
+	margin:100%;
+	}

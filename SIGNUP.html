@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+		<title>IGNITE</title>
+		
+		<link href="SIGNUP.css" style="text/css" rel="stylesheet">
+		
+    </head>
+    
+    <body>
+		
+		<form action="reg.php" name="ignite" method="post" onsubmit="Sub()">
+  
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+	
+	
+	<label for="IGname"><b>Name</b></label><br />
+    <input type="text" name="fname" placeholder="First"  required>
+   Mname: <input type="text" name="mname" placeholder="Middle(optional)"  >
+   Lname: <input type="text" name="lname" placeholder="Last"  required><br /><br />
+
+	<label for="IGname"><b>IGNITE Username</b></label><br />
+    <input type="text" name="usname" placeholder="Enter Username" name="usname" required><br /><br />
+    
+    <label for="email"><b>Email</b></label><br />
+    <input type="text" name="emailid" placeholder="Enter Email" id="email" required><br /><br />
+
+    <label for="psw"><b>IGNITE Password</b></label><br />
+    <input type="password" name="psd" placeholder="Enter Password" name="psw" id="psw" required><br /><br />
+
+    <label for="psw-repeat"><b>Repeat IGNITE Password</b></label><br />
+    <input type="password" name="rpsd" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat"  required><br /><br />
+    
+    <label for="Mob"><b>Mobile :</b></label><br />
+    <input type="number" name="mob" placeholder="Enter mob no: (optional)" name="psw-repeat" ><br /><br />
+
+   
+
+    <p>By creating an account you agree to our <a href="" style="color:blue">Terms & Privacy</a>.</p><br />
+
+    
+      <button type="button" class="cancelbtn" onclick="cancel()">Cancel</button>
+      <button type="submit" class="signupbtn" onsubmit="Sub()">Sign Up</button>
+    
+    
+</form>
+
+<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) { 
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+}
+
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) { 
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) { 
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+
+var email=document.getElementById("emalid").value;
+	if( email=="")
+	{
+		alert("Please enter Email id");
+	}
+	else if (!filter.test(email))
+	{
+		alert('Invalid email');
+	}
+
+	
+</script>
+
+		
+<script type="text/javascript">
+		
+		function IGNITE() {
+		window.alert('Thanks For Registering!');
+         window.location = "IGNITE.html";	
+		}		
+		
+				
+
+		
+		function cancel() {
+        confirm('Are you sure want to cancel the Registration :(');
+
+			
+		}		
+		
+		function Sub() {
+			 
+		alert("You have sucessfully complete registration");
+		}
+		
+		
+</script>
+
+</script>
+
+
+<!--Background Music-->
+		<embed src="Ansia Orchestra - Nova EpicOrchestralMFY - No Copyright Music.mp3">
+		
+		
+		
+</body>
+</html>
